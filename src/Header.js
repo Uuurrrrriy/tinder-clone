@@ -5,6 +5,7 @@ import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import { IconButton } from "@material-ui/core";
 import { NavLink, useHistory } from "react-router-dom";
 import "./Header.css";
+import TinderLogo from './assets/tinder-logo-transparent.png'
 
 export const Header = ({ backButton }) => {
   const history = useHistory();
@@ -23,7 +24,7 @@ export const Header = ({ backButton }) => {
       <NavLink to="/">
         <img
           className="header__logo"
-          src="https://1000logos.net/wp-content/uploads/2018/07/tinder-logo.png"
+          src={TinderLogo}
           alt="tinder logo"
         />
       </NavLink>
